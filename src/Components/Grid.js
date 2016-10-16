@@ -30,9 +30,8 @@ class Grid extends Component {
     
   render() {
     return (
-        <div>
-        <p>Im a grid</p>
-     <Griddle ShowFilter = {true} columns = {['LocalityId','Name']} results={this.state.displayData}/>
+        <div>     
+     <Griddle showFilter = {true} columns = {['LocalityId','Name']} results={this.state.displayData}/>
     </div>);  
   }
   

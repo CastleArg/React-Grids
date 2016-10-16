@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Grid from './Components/Grid.js'
+import'../node_modules/react-grid-layout/css/styles.css';
+import'../node_modules/react-resizable/css/styles.css';
+
+import Dashboard from './Components/Dashboard.js'
 
 class App extends Component {
   render() {
@@ -11,7 +14,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to Risk 10</h2>
         </div>
-        <Grid source="https://api.trademe.co.nz/v1/Localities/Regions.json"/>
+        <Dashboard/>
       </div>
     );
   }
