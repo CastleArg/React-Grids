@@ -36,7 +36,7 @@ class Grid extends Component {
   render() {
     return (
         <div>     
-     <Griddle enableInfiniteScroll={this.props.enableInfiniteScroll} columns={['LocalityId','Name']} showFilter={true}  results={this.state.displayData}/>
+     <Griddle enableInfiniteScroll={this.props.enableInfiniteScroll} columns={['LocalityId','Name']} showFilter={true} showSettings={true} results={this.state.displayData}/>
     </div>);  
   }
   
