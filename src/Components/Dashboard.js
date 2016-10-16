@@ -15,11 +15,11 @@ render() {
     ];
     return (
       <ReactGridLayout className="layout" layout={layout}  cols={12} rowHeight={30} width={1200}>
-          <div key={'a'}><Grid  source = 'https://api.trademe.co.nz/v1/Localities.Json'/></div>
-         <div key={'b'}><Grid source = 'https://api.trademe.co.nz/v1/Localities.Json'/></div>
-         <div key={'c'}><Grid source = 'https://api.trademe.co.nz/v1/Localities.Json'/></div>
-         <div key={'d'}><DataTreeView source = 'https://api.trademe.co.nz/v1/Localities.Json'/></div>
-         <div key={'e'}><DataChart source = 'https://api.trademe.co.nz/v1/Localities.Json'/></div>
+          <div key={'a'}><Grid  source='https://api.trademe.co.nz/v1/Localities.Json'/></div>
+         <div key={'b'}><Grid source='https://api.trademe.co.nz/v1/Localities.Json'/></div>
+         <div key={'c'}><Grid source='https://api.trademe.co.nz/v1/Localities.Json'/></div>
+         <div key={'d'}><DataTreeView source='https://api.trademe.co.nz/v1/Localities.Json'/></div>
+         <div key={'e'}><DataChart source='https://api.trademe.co.nz/v1/Localities.Json'/></div>
       </ReactGridLayout>)
 };
 }

@@ -3,7 +3,6 @@ import JSONTree from 'react-json-tree'
 import $ from 'jquery'
 
 var rootData = [{}];
- var displayData = [{}];
 const theme = {
   scheme: 'monokai',
   author: 'wimer hazenberg (http://www.monokai.nl)',
@@ -42,7 +41,7 @@ class DataTreeView extends Component {
     }
 
   render() {
-    return (<div><JSONTree hideRoot={true} theme = {theme} isLightTheme = {true} data={rootData} /></div>);
+    return (<div><JSONTree hideRoot={true} theme={theme} isLightTheme={true} data={rootData}/></div>);
   }
 }
 

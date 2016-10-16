@@ -18,7 +18,7 @@ class Grid extends Component {
       //attempt to strip out values taht are objects as griddle doesn't like them'
     for (var i = 0;i<rootData.length;i++){     
         for (var j = 0;j<3;j++){ 
-        console.log(typeof(rootData[i][j]));        
+       // console.log(typeof(rootData[i][j]));        
           if (typeof(rootData[i][j])!=='object'){          
               displayData.push(rootData[i][j]);   
           }  
@@ -36,7 +36,7 @@ class Grid extends Component {
   render() {
     return (
         <div>     
-     <Griddle enableInfiniteScroll = {this.props.enableInfiniteScroll} columns = {['LocalityId','Name']} showFilter = {true}  results={this.state.displayData}/>
+     <Griddle enableInfiniteScroll={this.props.enableInfiniteScroll} columns={['LocalityId','Name']} showFilter={true}  results={this.state.displayData}/>
     </div>);  
   }
   
