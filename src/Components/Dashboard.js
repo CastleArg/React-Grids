@@ -12,10 +12,10 @@ render() {
       {i: 'grid2', x: 4, y: 0, w: 3, h: 8,minW: 2,autosize:true},
       {i: 'treeview', x: 8, y: 0, w: 2, h: 8,minW: 2, maxH : 8,autosize:true},
       {i: 'grid3', x: 10, y: 0, w: 2, h: 8,minW: 2,autosize:true},
-      {i: 'chart', x: 2, y: 4, w: 4, h: 8,minW: 2,autosize:true}
+      {i: 'chart', x: 2, y: 4, w: 6, h: 8,minW: 2,autosize:true}
     ];
     return (
-      <ReactGridLayout className="layout" layout={layout}  cols={12} rowHeight={30} width={1280}>
+      <ReactGridLayout className="layout" layout={layout}  cols={16} rowHeight={30} width={1280}>
           <div key={'grid'}><Grid  source='https://api.trademe.co.nz/v1/Localities.Json'/></div>
          <div key={'grid2'}><Grid source='https://api.trademe.co.nz/v1/Localities.Json'/></div>
          <div key={'treeview'}><DataTreeView source='https://api.trademe.co.nz/v1/Localities.Json'/></div>
