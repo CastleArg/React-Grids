@@ -16,11 +16,9 @@ class DataChart extends Component {
                         }],
                         labels: ['loading']
                     }
-                 });
-          
-          
+                 });                  
   } 
-
+//todo traverse real data
   componentDidMount(){
         this.serverRequest = $.getJSON(this.props.source, function (result) {
             rootData = result;
@@ -28,8 +26,7 @@ class DataChart extends Component {
                 rootData: rootData,
                 chartData :{
                 datasets: [{
-                    data: [27,67,56,42],
-                    
+                    data: [27,67,56,42],                
                 }],
                 labels: ['undecided','temperamental','gazelle']
             }

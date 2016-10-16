@@ -28,10 +28,8 @@ const theme = {
 class DataTreeView extends Component {
 
     constructor(){
-      super();
-     
-      this.state = ({rootData :rootData});
-          
+      super(); 
+      this.state = ({rootData :rootData});          
   } 
 
     componentDidMount(){
@@ -43,11 +41,8 @@ class DataTreeView extends Component {
         }.bind(this));
     }
 
-
   render() {
-    return (<div>
-              <JSONTree hideRoot={true} theme = {theme} data={rootData} />         
-      </div>);
+    return (<div><JSONTree hideRoot={true} theme = {theme} isLightTheme = {true} data={rootData} /></div>);
   }
 }
 
