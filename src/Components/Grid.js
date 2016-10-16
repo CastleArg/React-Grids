@@ -14,15 +14,20 @@ class Grid extends Component {
   componentDidMount(){
       this.serverRequest = $.getJSON(this.props.source, function (result) {
       rootData = result;
-    for (var i = 0;i<rootData.length;i++){       
-        if (typeof(rootData[i].value)!=='object'){
-            displayData.push(rootData[i]);     
+
+      //attempt to strip out values taht are objects as griddle doesn't like them'
+    for (var i = 0;i<rootData.length;i++){     
+        for (var j = 0;jw<3;j++){ 
+        console.log(typeof(rootData[i][j]));        
+          if (typeof(rootData[i][j])!=='object'){          
+              displayData.push(rootData[i][j]);   
+          }  
         }
     }
       
       this.setState({
         rootData: rootData,
-        //put back once above works
+        //put back displayData once above works
         displayData : rootData
       });
     }.bind(this));
@@ -31,7 +36,7 @@ class Grid extends Component {
   render() {
     return (
         <div>     
-     <Griddle enableInfiniteScroll = {this.props.enableInfiniteScroll}  showFilter = {true} columns = {['LocalityId','Name']} results={this.state.displayData}/>
+     <Griddle enableInfiniteScroll = {this.props.enableInfiniteScroll} columns = {['LocalityId','Name']} showFilter = {true}  results={this.state.displayData}/>
     </div>);  
   }
   
