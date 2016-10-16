@@ -17,7 +17,7 @@ class Grid extends Component {
 
       //attempt to strip out values taht are objects as griddle doesn't like them'
     for (var i = 0;i<rootData.length;i++){     
-        for (var j = 0;jw<3;j++){ 
+        for (var j = 0;j<3;j++){ 
         console.log(typeof(rootData[i][j]));        
           if (typeof(rootData[i][j])!=='object'){          
               displayData.push(rootData[i][j]);   
