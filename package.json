@@ -8,9 +8,12 @@
   "dependencies": {
     "chart.js": "^1.1.1",
     "griddle-react": "^0.6.1",
+    "jquery": "^3.1.1",
     "react": "^15.3.2",
     "react-chartjs": "^0.8.0",
-    "react-dom": "^15.3.2"
+    "react-dom": "^15.3.2",
+    "react-grid-layout": "^0.13.9",
+    "react-json-tree": "^0.10.0"
   },
   "scripts": {
     "start": "react-scripts start",
