@@ -1,9 +1,9 @@
 {
-  "name": "reactUno",
+  "name": "react-grids",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "react-scripts": "0.6.1"
+    "react-scripts": "1.1.4"
   },
   "dependencies": {
     "chart.js": "^1.1.1",

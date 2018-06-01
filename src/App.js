@@ -11,8 +11,8 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to Risk 10</h2>
+          <h2>Welcome to Data Grids Pro</h2>
+          <h4>Feel free to resize and move the data grids</h4>
         </div>
         <Dashboard/>
       </div>
